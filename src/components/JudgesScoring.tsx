@@ -21,7 +21,7 @@ interface ScoreEntry {
 
 export function JudgesScoring({ competition, onBack }: JudgesScoringProps) {
   const [activeGender, setActiveGender] = useState<'male' | 'female'>('female');
-  const [groupBy, setGroupBy] = useState<'age' | 'level'>('age');
+  const [groupBy, setGroupBy] = useState<'age' | 'level'>('level');
   const [editingCell, setEditingCell] = useState<string | null>(null);
   const [scores, setScores] = useState<Record<string, ScoreEntry>>({});
   const [saving, setSaving] = useState<string | null>(null);
